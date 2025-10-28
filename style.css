@@ -1,0 +1,161 @@
+/* Osnovni stilovi */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: #004080;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+section.lesson {
+  background: white;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.meta .badge {
+  background: #ff66b2;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.note {
+  background: #ffffcc;
+  padding: 5px 10px;
+  margin: 10px 0;
+  border-left: 4px solid #ffcc00;
+}
+
+/* Lekcija 1 - External CSS primjer */
+.external {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Lekcija 2 - Box Model */
+.box-model {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid blue;
+  margin: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Lekcija 3 - Opacity i Gradient */
+.opacity {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  opacity: 0.6;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+}
+
+.gradient {
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  margin: 10px 0;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+}
+
+/* Lekcija 4 - Sjene i border-radius */
+.shadow-radius {
+  width: 200px;
+  height: 100px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* Lekcija 5 - Background */
+.background {
+  width: 300px;
+  height: 150px;
+  background-image: url('https://picsum.photos/300/150');
+  background-size: cover;
+  background-position: center;
+  margin: 10px 0;
+}
+
+/* Lekcija 6 - Pozicioniranje */
+.position-example {
+  position: relative;
+  height: 150px;
+  background: #eee;
+  margin: 10px 0;
+}
+
+.position-example .static {
+  background: #aaa;
+  padding: 5px;
+}
+
+.position-example .relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: #66cc66;
+  padding: 5px;
+}
+
+.position-example .absolute {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: #ff6666;
+  padding: 5px;
+}
+
+/* Lekcija 7 - Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.flex-container div {
+  background: #004080;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #004080;
+  color: white;
+  margin-top: 20px;
+}

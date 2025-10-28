@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skripta - Luka Barun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bilješke s predavanja</h1>
+    <p>Projekt: <strong>Skripta</strong><strong>-Luka Barun</strong></p>
+  </header>
+
+  <main class="container">
+
+    LEKCIJA-1
+    <section class="lesson">
+      <h2>Kako se dodaje CSS u HTML</h2>
+      <div class="meta"><span class="badge">Lekcija 1</span></div>
+
+      <h3>Primjer Inline CSS:</h3>
+      <pre><code>&lt;p style="color: blue;"&gt;Ovo je inline CSS&lt;/p&gt;</code></pre>
+      <p style="color: blue;">Ovo je inline CSS</p>
+
+      <h3>Primjer Internal CSS:</h3>
+      <pre><code>&lt;style&gt;
+  .internal { color: green; font-style: italic; }
+&lt;/style&gt;
+&lt;p class="internal"&gt;Ovo je internal CSS&lt;/p&gt;</code></pre>
+      <p class="internal">Ovo je internal CSS</p>
+
+      <h3>Primjer External CSS:</h3>
+      <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;p class="external"&gt;Ovo je external CSS&lt;/p&gt;</code></pre>
+      <p class="external">Ovo je external CSS</p>
+
+    </section>
+
+    LEKCIJA-2
+    <section class="lesson">
+      <h2>CSS Box Model</h2>
+      <p>Box model: <strong>margin → border → padding → content</strong></p>
+
+      <pre><code>.box-model {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid blue;
+  margin: 10px;
+  box-sizing: border-box;
+}</code></pre>
+
+      <div class="box-model">Box Model Primjer</div>
+    </section>
+
+    LEKCIJA-3
+    <section class="lesson">
+      <h2>Opacity i Gradient</h2>
+
+      <pre><code>.opacity {
+  background-color: red;
+  opacity: 0.6;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+}</code></pre>
+
+      <div class="opacity">Opacity 0.6</div>
+      <div class="gradient">Linear Gradient</div>
+    </section>
+
+   LEKCIJA-4 
+    <section class="lesson">
+      <h2>Sjene i zaobljeni rubovi</h2>
+
+      <pre><code>.shadow-radius {
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}</code></pre>
+
+      <div class="shadow-radius">Sjena + Rubovi</div>
+    </section>
+
+    LEKCIJA-5 
+    <section class="lesson">
+      <h2>Pozadina (Background)</h2>
+
+      <pre><code>.background {
+  background-image: url('https://picsum.photos/300/150 ');
+  background-size: cover;
+  background-position: center;
+}</code></pre>
+
+      <div class="background"></div>
+    </section>
+
+    LEKCIJA-6 
+    <section class="lesson">
+      <h2>Pozicioniranje (Position)</h2>
+
+      <pre><code>.static { position: static; }
+.relative { position: relative; top: 10px; left: 10px; }
+.absolute { position: absolute; top: 50px; left: 50px; }</code></pre>
+
+      <div class="position-example">
+        <div class="static">Static</div>
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+      </div>
+    </section>
+
+    LEKCIJA-7 
+    <section class="lesson">
+      <h2>Flexbox</h2>
+
+      <pre><code>.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}</code></pre>
+
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Skripta projekt - Luka Barun
+  </footer>
+
+</body>
+</html>
